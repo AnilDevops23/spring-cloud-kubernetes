@@ -54,7 +54,7 @@ pipeline {
 	            dockerCleanup ( "${params.ImageName}", "${params.docker_repo}" )
 			}
 		}
-	    stage("Dummy1") {
+	    stage("Dummy11") {
 	        steps {
 	            sh 'echo "hello"'
 			}
