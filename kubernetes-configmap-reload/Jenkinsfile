@@ -54,7 +54,11 @@ pipeline {
 	            dockerCleanup ( "${params.ImageName}", "${params.docker_repo}" )
 			}
 		}
-	    
+	    stage("Dummy") {
+	        steps {
+	            sh 'echo "hello"'
+			}
+		}
 		// 	    stage("Ansible Setup") {
 	 //        when {
 		// 		expression { params.action == 'create' }
